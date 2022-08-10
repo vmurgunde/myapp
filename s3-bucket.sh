@@ -1,12 +1,11 @@
 #!/bin/bash
-# Purpose: Cloudfront Static WebSite
-# Maintainer: Muhammad Asim
+
 
 BUCKET_NAME=`terraform output | grep -i bucket-name | awk '{print $3}'`
 
 LOGS="logs/"
 
-APPLICATION_PATH="./webapp"
+APPLICATION_PATH="./myapp"
 
 
 
